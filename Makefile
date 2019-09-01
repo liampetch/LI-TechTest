@@ -9,3 +9,6 @@ deps: composer.phar
 
 composer.phar:
 	curl -sS https://getcomposer.org/installer | php
+
+test:
+    docker exec -it landinsight_php_1 make deps
