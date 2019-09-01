@@ -1,0 +1,4 @@
+properties:
+  path: /properties
+  methods: [GET]
+  controller: App\Controller\PropertiesController::list
