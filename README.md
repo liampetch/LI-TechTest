@@ -23,14 +23,15 @@ Using this data plot each point on a grid. The points should be filled with a co
 - 95% - 100%
 
 ## Proposed solution
-The solution consists of a backend API running on PHP7 / Symfony 4. I opted to use Symfony
+The solution consists of a backend API running on PHP7 / Symfony 4 and a front end
+ utilises the JS canvas library P5.js. I opted to use Symfony
 because it makes serializing collections of objects easy with relatively little setup.
 
 It makes us of a shared 'MaxProvider' object given on instantiation so that
 the SoldProperty's can determine their own price band when they are serialized in an attempt 
 to avoid having to loop over and process them again when they've all been read from file.
 
-The front end is a super simple use of a JS canvas library to draw squares on a grid based on the provided co-ordinates.
+The front end is a super simple use of P5.js to draw squares on a grid based on the provided co-ordinates.
 It's incredibly thin, and it would probably take considerably more work to display anything much more 
 informative than a kind of heat map with it. It seemed like a nice simple fit for just displaying this though.
 
