@@ -27,7 +27,7 @@ The solution consists of a backend API running on PHP7 / Symfony 4 and a front e
  utilises the JS canvas library P5.js. I opted to use Symfony
 because it makes serializing collections of objects easy with relatively little setup.
 
-It makes us of a shared 'MaxProvider' object given on instantiation so that
+It makes use of a shared 'MaxProvider' object given on instantiation so that
 the SoldProperty's can determine their own price band when they are serialized in an attempt 
 to avoid having to loop over and process them again when they've all been read from file.
 
