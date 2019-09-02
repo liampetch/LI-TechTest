@@ -1,6 +1,6 @@
 ## Problem outline
 
-You have been given a [set of data points](sold-price-data.txt), with each item taking the following form:
+You have been given a [set of data points](data/price-data), with each item taking the following form:
 
 ```
 X Y P
